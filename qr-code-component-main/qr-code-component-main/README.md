@@ -22,8 +22,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- [Solution](https://github.com/astr0n0mer/challenges-frontendmentor.io/qr-code-component-main/qr-code-component-main/)
-- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/qr-code-component-main/qr-code-component-main/index.html)
+- [Solution](https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/qr-code-component-main/qr-code-component-main)
+- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/qr-code-component-main/qr-code-component-main)
 
 ## My process
 
@@ -46,7 +46,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Useful resources
 
 - [Conquering Responsive Layouts](https://courses.kevinpowell.co/view/courses/conquering-responsive-layouts)
-  - This course helped me clear out the concepts with absolute (*px*) and relative (*%*, *em* and *rem*) units in CSS.
+  - This course helped me clear out the concepts with absolute (_px_) and relative (_%_, _em_ and _rem_) units in CSS.
   - Really great for people that have a little background with CSS, let's say from [w3schools](https://www.w3schools.com/).
 
 ## Author
