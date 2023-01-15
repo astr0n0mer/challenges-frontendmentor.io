@@ -47,6 +47,7 @@ input[type="button"] {
   width: 20em;
   border-radius: 1em;
   background-color: hsl(225, 100%, 98%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .hero-img {
@@ -136,12 +137,14 @@ input[type="button"] {
 .card__cta__primary {
   background-color: hsl(245, 75%, 52%);
   color: hsl(225, 100%, 98%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 .card__cta__cancel {
   width: min-content;
   margin: 0 auto;
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsla(0, 0%, 0%, 0);
   color: hsl(224, 23%, 55%);
 }
 .card__cta__cancel:hover {
