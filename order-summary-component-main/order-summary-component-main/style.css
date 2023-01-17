@@ -42,7 +42,7 @@ input[type="button"] {
   cursor: pointer;
 }
 
-.wrapper {
+.hero {
   overflow: hidden;
   width: 20em;
   border-radius: 1em;
@@ -50,7 +50,7 @@ input[type="button"] {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.hero-img {
+.hero__img {
   width: 100%;
 }
 
@@ -60,7 +60,7 @@ input[type="button"] {
 }
 
 .card__title,
-.card__plan__duration {
+.plan-details__duration {
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
@@ -76,7 +76,7 @@ input[type="button"] {
   color: hsl(224, 23%, 55%);
 }
 
-.card__plan {
+.plan {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,67 +87,67 @@ input[type="button"] {
   background-color: hsla(225, 100%, 94%, 0.3);
 }
 
-.card__plan__img {
+.plan__img {
   height: 100%;
   margin-right: 1.5em;
 }
 
-.card__plan__wrapper {
+.plan-details {
   flex-grow: 1;
   text-align: left;
 }
 
-.card__plan__duration {
+.plan-details__duration {
   font-size: 0.85rem;
 }
 
-.card__plan__price {
+.plan-details__price {
   font-size: 0.85rem;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
 }
 
-.card__plan__change-btn {
+.plan__change-btn {
   font-size: 0.8rem;
   font-weight: 800;
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
 }
 
-.card__plan__change-btn:hover,
-.card__cta__primary:hover {
+.plan__change-btn:hover,
+.cta__primary:hover {
   opacity: 0.6;
   text-decoration: none;
 }
 
-.card__cta {
+.cta {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
-.card__cta__primary,
-.card__cta__cancel {
+.cta__primary,
+.cta__cancel {
   padding: 0.75em;
   border-radius: 0.6em;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.card__cta__primary {
+.cta__primary {
   background-color: hsl(245, 75%, 52%);
   color: hsl(225, 100%, 98%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.card__cta__cancel {
+.cta__cancel {
   width: min-content;
   margin: 0 auto;
   background-color: hsla(0, 0%, 0%, 0);
   color: hsl(224, 23%, 55%);
 }
-.card__cta__cancel:hover {
+.cta__cancel:hover {
   color: black;
 }
 
