@@ -1,8 +1,7 @@
-Pull request corresponding to [challenge_name]() challenge from [Frontend Mentor](https://www.frontendmentor.io/)
+Pull request corresponding to [challenge_name](challenge_url) challenge from [Frontend Mentor](https://www.frontendmentor.io/)
 
-<label><input type="radio" name="input" />New solution</label>
-
-<label><input type="radio" name="input" />Implement feedback [comments]() from [@commenter](https://www.frontendmentor.io/profile/commenter_username)</label>
+- [ ] New solution
+- [ ] Implement feedback [comments]() from [@commenter](https://www.frontendmentor.io/profile/commenter_username)
 
 Comment summary:
 
