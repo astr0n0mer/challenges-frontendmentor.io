@@ -1,0 +1,131 @@
+@import url("../../utility.css");
+
+:root,
+:root::before,
+:root::after {
+  --primary-background-color: hsl(30, 38%, 92%);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body,
+p,
+h1 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background-color: var(--primary-background-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  overflow: hidden;
+  border-radius: 0.5em;
+  width: 21.5em;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.main__img {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.15em;
+  padding: 1.2em 1.5em;
+}
+
+.card__eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  color: hsl(228, 12%, 48%);
+}
+
+.card__title {
+  font-size: 2rem;
+  line-height: 0.95em;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+.card__info {
+  font-size: 0.88rem;
+  line-height: 1.6em;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.price__new {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+
+.price__old {
+  font-size: 0.8rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.cta {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  border-radius: 0.5em;
+  width: 100%;
+  padding: 1em 0;
+  background-color: hsl(158, 36%, 37%);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.cta:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    width: calc(1.6 * 21.5em);
+  }
+
+  .main__img {
+    height: 100%;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1.75em;
+  }
+
+  .card__title {
+    font-size: 1.9rem;
+  }
+
+  .card__info {
+    font-size: 0.8rem;
+  }
+}
+
+.attribution {
+  color: var(--primary-background-color);
+}
