@@ -1,31 +1,38 @@
-* {
+@import url("../../utility.css");
+
+:root,
+:root::before,
+:root::after {
+  --primary-background-color: hsl(212, 45%, 89%);
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: hsl(212, 45%, 89%);
+* {
+  box-sizing: inherit;
+}
 
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--primary-background-color);
+  font-family: "Outfit", sans-serif;
 }
 
 .card {
-  width: 20em;
-  background-color: white;
   box-shadow: rgb(100 100 111 / 20%) 0px 6px 30px 0px;
   border-radius: 1.2em;
+  width: 20em;
   padding: 1em;
-
-  font-family: "Outfit", sans-serif;
+  background-color: white;
   text-align: center;
 }
 
 .card__img {
-  width: 100%;
   border-radius: 3.5%;
+  width: 100%;
 }
 
 .card__title {
@@ -35,30 +42,18 @@ body {
 }
 
 .card__info {
-  color: hsl(220, 15%, 55%);
   padding-bottom: 0.5em;
   font-size: 0.95rem;
   font-weight: 400;
+  color: hsl(220, 15%, 55%);
 }
 
 .centered {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 }
 
 .attribution {
-  padding: 0.2em;
-  font-family: "Outfit", sans-serif;
-
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.attribution,
-.attribution a {
-  color: hsl(212, 45%, 89%);
-  mix-blend-mode: exclusion;
-  opacity: 0.6;
+  color: var(--primary-background-color);
 }
