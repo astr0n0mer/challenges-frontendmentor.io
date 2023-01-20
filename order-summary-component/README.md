@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/order-summary-component-main/order-summary-component-main)
-- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/order-summary-component-main/order-summary-component-main/index.html)
+- [Solution](./)
+- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/order-summary-component/index.html)
 
 ## My process
 
