@@ -13,8 +13,7 @@
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
   margin: 0;
   min-height: 100vh;
@@ -42,6 +41,13 @@ input[type="button"] {
   border: 0;
   cursor: pointer;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.challenge-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
