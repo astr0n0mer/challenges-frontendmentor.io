@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/product-preview-card-component-main/product-preview-card-component-main)
-- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/product-preview-card-component-main/product-preview-card-component-main/index.html)
+- [Solution](./)
+- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/product-preview-card-component/index.html)
 
 ## My process
 
