@@ -1,0 +1,120 @@
+:root,
+:root::before,
+:root::after {
+  --primary-background-color: hsl(0, 0%, 95%);
+  --background-color-sedans: hsl(31, 77%, 52%);
+  --background-color-suvs: hsl(184, 100%, 22%);
+  --background-color-luxury: hsl(179, 100%, 13%);
+  --title-color: var(--primary-background-color);
+  --content-color: hsla(0, 0%, 100%, 0.75);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--primary-background-color);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.challenge-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto;
+}
+
+.main {
+  overflow: hidden;
+  border-radius: 0.5em;
+  width: max(320px, 40%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 3em;
+  font-weight: 400;
+}
+
+.card--sedans {
+  background-color: var(--background-color-sedans);
+  color: var(--background-color-sedans);
+}
+.card--sedans::before {
+  content: url("./images/icon-sedans.svg");
+}
+
+.card--suvs {
+  background-color: var(--background-color-suvs);
+  color: var(--background-color-suvs);
+}
+.card--suvs::before {
+  content: url("./images/icon-suvs.svg");
+}
+
+.card--luxury {
+  background-color: var(--background-color-luxury);
+  color: var(--background-color-luxury);
+}
+.card--luxury::before {
+  content: url("./images/icon-luxury.svg");
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.card__info {
+  opacity: 0.8;
+  line-height: 1.5;
+  color: var(--content-color);
+}
+
+.card__cta {
+  border: 2px solid var(--title-color);
+  border-radius: 2em;
+  padding: 1em 2em;
+  background-color: var(--title-color);
+  cursor: pointer;
+  color: inherit;
+}
+.card__cta:hover {
+  background-color: inherit;
+  color: var(--title-color);
+}
+
+.attribution {
+  color: var(--primary-background-color);
+}
+
+@media (min-width: 900px) {
+  .challenge-container {
+    margin: 0;
+  }
+  .main {
+    display: flex;
+    width: min(950px, 95%);
+  }
+  .card__info {
+    margin-bottom: 3em;
+  }
+}
