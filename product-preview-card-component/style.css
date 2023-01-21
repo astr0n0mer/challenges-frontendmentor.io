@@ -19,12 +19,18 @@ h1 {
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
   min-height: 100vh;
   background-color: var(--primary-background-color);
   font-family: "Montserrat", sans-serif;
+}
+
+.challenge-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
