@@ -5,6 +5,10 @@
   --clr-very-dark-blue: hsl(229, 57%, 11%);
 }
 
+h1 {
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -58,6 +62,12 @@ button[class^="btn__"] {
   background-color: var(--clr-very-dark-blue);
   cursor: pointer;
 }
+button[class^="btn__"]:is(:hover, :focus) {
+  outline: 1px solid var(--clr-pale-blue);
+  scale: 1.1;
+  opacity: 0.75;
+  transition-duration: 300ms;
+}
 
 .usage {
   position: relative;
@@ -105,11 +115,19 @@ button[class^="btn__"] {
 }
 
 .usage-bar-progress {
+  animation: fill-bar 700ms ease-in-out forwards;
   border-radius: inherit;
-  width: 81.5%;
   height: 100%;
   padding: inherit;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+@keyframes fill-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 81.5%;
+  }
 }
 
 .usage-bar-slider {
