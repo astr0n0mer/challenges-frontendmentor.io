@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/utility.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fylo data storage component | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="challenge-container">
+      <div class="wrapper">
+        <div class="hero">
+          <img src="./images/logo.svg" alt="Fylo logo" class="hero__title" />
+          <div class="btn">
+            <button class="btn__document">
+              <img
+                src="./images/icon-document.svg"
+                alt="Document"
+                aria-hidden="true"
+              />
+            </button>
+            <button class="btn__folder">
+              <img
+                src="./images/icon-folder.svg"
+                alt="Folder"
+                aria-hidden="true"
+              />
+            </button>
+            <button class="btn__upload">
+              <img
+                src="./images/icon-upload.svg"
+                alt="Upload"
+                aria-hidden="true"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="usage">
+          <p class="usage__info">
+            You've used <span class="usage__info--bold">815 GB</span> of your
+            storage
+          </p>
+          <p class="space-left">
+            <span class="space-left__text--bold">185 </span>GB Left
+          </p>
+          <div class="usage-bar">
+            <div class="usage-bar-border">
+              <div class="usage-bar-progress">
+                <div class="usage-bar-slider"></div>
+              </div>
+            </div>
+            <div class="limit">
+              <span class="limit__min">0 GB</span
+              ><span class="limit__max">1000 GB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/astr0n0mer" target="_blank"
+        >Imran Khan</a
+      >.
+    </footer>
+  </body>
+</html>
