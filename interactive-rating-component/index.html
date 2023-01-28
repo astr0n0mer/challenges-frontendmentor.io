@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Interactive rating component | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="challenge-container">
+      <section class="card">
+        <form action="/" class="form">
+          <!-- Rating state start -->
+          <img class="form__img" src="./images/icon-star.svg" alt="Star icon" />
+          <h1 class="form__title">How did we do?</h1>
+          <p class="form__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <fieldset class="rating">
+            <input
+              type="radio"
+              class="rating__radio"
+              name="rating"
+              value="1"
+              id="rating__radio-1"
+            /><label for="rating__radio-1" class="rating__label" tabindex="0"
+              >1</label
+            >
+            <input
+              type="radio"
+              class="rating__radio"
+              name="rating"
+              value="2"
+              id="rating__radio-2"
+            /><label for="rating__radio-2" class="rating__label" tabindex="0"
+              >2</label
+            >
+            <input
+              type="radio"
+              class="rating__radio"
+              name="rating"
+              value="3"
+              id="rating__radio-3"
+            /><label for="rating__radio-3" class="rating__label" tabindex="0"
+              >3</label
+            >
+            <input
+              type="radio"
+              class="rating__radio"
+              name="rating"
+              value="4"
+              id="rating__radio-4"
+            /><label for="rating__radio-4" class="rating__label" tabindex="0"
+              >4</label
+            >
+            <input
+              type="radio"
+              class="rating__radio"
+              name="rating"
+              value="5"
+              id="rating__radio-5"
+            /><label for="rating__radio-5" class="rating__label" tabindex="0"
+              >5</label
+            >
+          </fieldset>
+          <input
+            type="button"
+            value="Submit"
+            class="form__submit"
+            tabindex="0"
+          />
+          <!-- Rating state end -->
+        </form>
+        <section class="submit-pg d-none">
+          <!-- Thank you state start -->
+          <img
+            class="submit-pg__img"
+            src="./images/illustration-thank-you.svg"
+            alt="Thank you"
+          />
+          <p class="submit-pg__rating">
+            You selected <span class="selected-rating"></span> out of 5
+          </p>
+          <h2 class="submit-pg__thank-you">Thank you!</h2>
+          <p class="submit-pg__msg">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+          <!-- Thank you state end -->
+        </section>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/astr0n0mer" target="_blank"
+        >Imran Khan</a
+      >.
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
