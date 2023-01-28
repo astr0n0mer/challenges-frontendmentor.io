@@ -50,7 +50,7 @@ body {
   gap: 1em;
 }
 
-button[class^="btn__"] {
+div[class^="btn__"] {
   all: unset;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@ button[class^="btn__"] {
   background-color: var(--clr-very-dark-blue);
   cursor: pointer;
 }
-button[class^="btn__"]:is(:hover, :focus) {
+div[class^="btn__"]:is(:hover, :focus) {
   outline: 1px solid var(--clr-pale-blue);
   scale: 1.1;
   opacity: 0.75;
