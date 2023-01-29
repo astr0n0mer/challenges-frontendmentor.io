@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Advice generator app | Frontend Mentor</title>
+  </head>
+  <body>
+    <div class="challenge-container">
+      <main class="advice">
+        <h1 class="advice__id">
+          Advice #<span class="advice__id-number"></span>
+        </h1>
+        <blockquote class="advice__text"></blockquote>
+        <picture>
+          <source
+            srcset="./images/pattern-divider-desktop.svg"
+            media="(min-width: 478px)"
+          />
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            class="advice__divider"
+            alt=""
+            aria-hidden="true"
+          />
+        </picture>
+        <div class="advice__change-btn" role="button" tabindex="0">
+          <img src="./images/icon-dice.svg" alt="Dice" />
+        </div>
+      </main>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/astr0n0mer" target="_blank"
+        >Imran Khan</a
+      >.
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
