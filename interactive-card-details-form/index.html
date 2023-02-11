@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Interactive card details form | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="card">
+        <div class="front">
+          <h1 class="front__card-number">
+            <span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+          </h1>
+          <p class="front__cardholder-name">Jane Appleseed</p>
+          <p class="front__expiry-date">MM/YY</p>
+        </div>
+        <div class="back"><p class="back__secret">000</p></div>
+      </section>
+      <form action="" class="form">
+        <div class="cardholder-name">
+          <label for="cardholder-name__input" class="cardholder-name__label"
+            >Cardholder Name</label
+          ><input
+            type="text"
+            name="cardholder-name"
+            id="cardholder-name__input"
+            class="cardholder-name__input"
+            placeholder="e.g. Jane Appleseed"
+            maxlength="25"
+            pattern="([A-Za-z]+\s?)+"
+            title="Must enter letters only."
+            required
+          />
+        </div>
+        <div class="card-number">
+          <label for="card-number__input" class="card-number__label"
+            >Card Number</label
+          ><input
+            type="text"
+            name="card-number"
+            id="card-number__input"
+            class="card-number__input"
+            placeholder="e.g. 1234 5678 9123 0000"
+            pattern="\d{16}"
+            title="Card number should have 16 digits."
+            inputmode="numeric"
+            required
+          />
+        </div>
+        <div class="expiry-date">
+          <label for="expiry-date__input" class="expiry-date__label"
+            >Exp. Date (MMMM/YYYY)</label
+          ><input
+            type="month"
+            name="expiry-date"
+            id="expiry-date__input"
+            class="expiry-date__input"
+            required
+          />
+        </div>
+        <div class="secret">
+          <label for="secret__input" class="secret__label">CVC</label>
+          <input
+            type="password"
+            name="secret"
+            id="secret__input"
+            class="secret__input"
+            placeholder="e.g. 123"
+            pattern="\d{3}"
+            title="CVC should have 3 digits."
+            inputmode="numeric"
+            required
+          />
+        </div>
+        <input type="submit" value="Confirm" class="form__submit primary-cta" />
+      </form>
+      <section class="complete d-none">
+        <h1 class="complete__heading">Thank you!</h1>
+        <p class="complete__message">We've added your card details</p>
+        <input
+          type="button"
+          class="complete__cta primary-cta"
+          value="Continue"
+        />
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >
+      . Coded by
+      <a href="https://www.frontendmentor.io/profile/astr0n0mer" target="_blank"
+        >Imran Khan</a
+      >.
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
