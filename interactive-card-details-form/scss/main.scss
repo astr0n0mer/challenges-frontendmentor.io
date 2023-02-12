@@ -110,6 +110,7 @@ body {
     div {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 0.5em;
     }
 
@@ -142,14 +143,15 @@ body {
     }
 
     input[class$="__input"] {
+      animation: expand-to-100 500ms ease-in-out forwards;
       outline: 0;
       border: 1px solid var(--clr-input-value);
       border-radius: 0.4em;
       width: 100%;
       padding: 0.5em 0.75em;
-      font-size: 1rem;
+      background-color: inherit;
       color: var(--clr-btn-background);
-      animation: expand-to-100 500ms ease-in-out forwards;
+      font-size: 1rem;
 
       &::placeholder {
         color: var(--clr-input-value);
