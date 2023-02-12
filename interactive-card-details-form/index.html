@@ -66,12 +66,14 @@
         </div>
         <div class="expiry-date">
           <label for="expiry-date__input" class="expiry-date__label"
-            >Exp. Date (MMMM/YYYY)</label
+            >Expiry Date</label
           ><input
             type="month"
             name="expiry-date"
             id="expiry-date__input"
             class="expiry-date__input"
+            pattern="\d{4}[-/]\d{2}"
+            title="Please enter date in YYYY-MM format."
             required
           />
         </div>

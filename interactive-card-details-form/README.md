@@ -54,7 +54,15 @@ Users should be able to:
 - Got to implement image borders using the following CSS code:
   ```CSS
   border-color: transparent;
-  background-image: linear-gradient(var(--clr-primary-background), var(--clr-primary-background)), linear-gradient(to right, var(--clr-1-gradient-input-border), var(--clr-2-gradient-input-border));
+  background-image: linear-gradient(
+      hsl(0, 0%, 100%),
+      hsl(0, 0%, 100%)
+    ),
+    linear-gradient(
+      to right,
+      hsl(249, 99%, 64%),
+      hsl(278, 94%, 30%)
+    );
   background-origin: border-box;
   background-clip: padding-box, border-box;
   ```
