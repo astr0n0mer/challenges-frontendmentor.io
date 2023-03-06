@@ -1,8 +1,13 @@
-const cardholderName = document.querySelector(".cardholder-name__input");
-const cardNumber = document.querySelector(".card-number__input");
-const cardExpiry = document.querySelector(".expiry-date__input");
-const cardSecret = document.querySelector(".secret__input");
-const btnSubmit = document.querySelector(".form__submit");
+const [cardFrontDefault, cardBackDefault] = [
+  document.querySelector(".front").cloneNode(true),
+  document.querySelector(".back").cloneNode(true),
+];
+const form = document.querySelector(".form");
+const cardholderName = form.querySelector(".cardholder-name__input");
+const cardNumber = form.querySelector(".card-number__input");
+const cardExpiry = form.querySelector(".expiry-date__input");
+const cardSecret = form.querySelector(".secret__input");
+const btnSubmit = form.querySelector(".form__submit");
 const btnContinue = document.querySelector(".complete__cta");
 
 // Setting min and max for expiry date dynamically
@@ -65,15 +70,17 @@ btnSubmit.onclick = function (e) {
   }
   if (validationStatus) {
     e.preventDefault();
-    let form = document.querySelector(".form");
-    form.classList.toggle("d-none");
+    form.classList.add("d-none");
     form.reset();
-    document.querySelector(".complete").classList.toggle("d-none");
+    document.querySelector(".complete").classList.remove("d-none");
   }
 };
 
 btnContinue.onclick = function (e) {
-  document.location.reload();
-  document.querySelector(".form").classList.toggle("d-none");
-  document.querySelector(".complete").classList.toggle("d-none");
+  document.querySelector(".complete").classList.add("d-none");
+  form.classList.remove("d-none");
+  document
+    .querySelector(".front")
+    .replaceWith(cardFrontDefault.cloneNode(true));
+  document.querySelector(".back").replaceWith(cardBackDefault.cloneNode(true));
 };
