@@ -16,12 +16,12 @@
 }
 :root {
   font-size: 0.8125rem;
-  --clr-primary-background: hsl(210deg, 46%, 95%);
-  --clr-moderate-violet: hsl(263deg, 55%, 52%);
-  --clr-very-dark-grayish-blue: hsl(217deg, 19%, 35%);
-  --clr-very-dark-blackish-blue: hsl(219deg, 29%, 14%);
-  --clr-white: hsl(0deg, 0%, 100%);
-  --clr-light-gray: hsl(0deg, 0%, 81%);
+  --clr-primary-background: hsl(210, 46%, 95%);
+  --clr-moderate-violet: hsl(263, 55%, 52%);
+  --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --clr-very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(0, 0%, 81%);
 }
 
 body {
@@ -85,8 +85,8 @@ body {
 }
 .main .testimonial:nth-child(5n+1) {
   grid-area: testimonial-1;
-  -webkit-animation: transparent-to-opaque 1300ms ease-in-out forwards;
-          animation: transparent-to-opaque 1300ms ease-in-out forwards;
+  -webkit-animation: transparent-to-opaque 1200ms ease-in-out forwards;
+          animation: transparent-to-opaque 1200ms ease-in-out forwards;
   background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: right 5em top;
@@ -95,29 +95,29 @@ body {
 }
 .main .testimonial:nth-child(5n+2) {
   grid-area: testimonial-2;
-  -webkit-animation: transparent-to-opaque 1400ms ease-in-out forwards;
-          animation: transparent-to-opaque 1400ms ease-in-out forwards;
+  -webkit-animation: transparent-to-opaque 1000ms ease-in-out forwards;
+          animation: transparent-to-opaque 1000ms ease-in-out forwards;
   background-color: var(--clr-very-dark-grayish-blue);
   color: var(--clr-white);
 }
 .main .testimonial:nth-child(5n+3) {
   grid-area: testimonial-3;
-  -webkit-animation: transparent-to-opaque 1100ms ease-in-out forwards;
-          animation: transparent-to-opaque 1100ms ease-in-out forwards;
+  -webkit-animation: transparent-to-opaque 900ms ease-in-out forwards;
+          animation: transparent-to-opaque 900ms ease-in-out forwards;
   background-color: var(--clr-white);
   color: var(--clr-very-dark-grayish-blue);
 }
 .main .testimonial:nth-child(5n+4) {
   grid-area: testimonial-4;
-  -webkit-animation: transparent-to-opaque 1200ms ease-in-out forwards;
-          animation: transparent-to-opaque 1200ms ease-in-out forwards;
+  -webkit-animation: transparent-to-opaque 900ms ease-in-out forwards;
+          animation: transparent-to-opaque 900ms ease-in-out forwards;
   background-color: var(--clr-very-dark-blackish-blue);
   color: var(--clr-white);
 }
 .main .testimonial:nth-child(5n) {
   grid-area: testimonial-5;
-  -webkit-animation: transparent-to-opaque 800ms ease-in-out forwards;
-          animation: transparent-to-opaque 800ms ease-in-out forwards;
+  -webkit-animation: transparent-to-opaque 1400ms ease-in-out forwards;
+          animation: transparent-to-opaque 1400ms ease-in-out forwards;
   background-color: var(--clr-white);
   color: var(--clr-very-dark-grayish-blue);
 }
@@ -130,7 +130,7 @@ body {
           align-items: center;
   gap: 1.25em;
 }
-.main .testimonial .header img[alt="Profile picture"] {
+.main .testimonial .header img[alt] {
   border-radius: 50%;
   border: 2px solid;
   height: 2.5rem;
@@ -145,13 +145,18 @@ body {
   opacity: 0.5;
   font-size: 0.85rem;
 }
-.main .testimonial__body {
-  opacity: 0.7;
+.main .testimonial__body p:first-child {
+  font-weight: bold;
+  font-size: 1.5em;
 }
-.main .testimonial__body::before {
+.main .testimonial__body p + p {
+  opacity: 0.7;
+  margin-top: 1em;
+}
+.main .testimonial__body p + p::before {
   content: open-quote;
 }
-.main .testimonial__body::after {
+.main .testimonial__body p + p::after {
   content: close-quote;
 }
 
