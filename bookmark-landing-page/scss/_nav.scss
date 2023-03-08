@@ -1,0 +1,147 @@
+@use "./config";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em auto;
+
+  &-menu {
+    display: none;
+
+    @media (min-width: config.$tablet-start) {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      list-style: none;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: inherit;
+
+    &:hover {
+      color: var(--accent-secondary);
+    }
+  }
+
+  &__item--primary {
+    border: 2px solid var(--accent-secondary);
+    border-radius: 0.3em;
+    padding: 0.75em 2.5em;
+    background-color: var(--accent-secondary);
+    color: whitesmoke;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--accent-secondary);
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+    padding: 0.5em;
+
+    @media (min-width: config.$tablet-start) {
+      display: none;
+    }
+  }
+
+  .nav--mobile {
+    position: absolute;
+    top: -100%;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.95;
+    min-height: 100%;
+    transition: all 500ms ease-in-out;
+
+    margin: 0;
+    background-color: var(--clr-text-primary);
+    color: white;
+
+    @media (min-width: config.$tablet-start) {
+      display: none;
+    }
+
+    * {
+      opacity: 1;
+    }
+
+    .nav__wrapper {
+      margin: 5em auto;
+      width: min(320px, 90%);
+    }
+
+    .nav__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .cross {
+        padding: 0.5em;
+      }
+    }
+
+    .nav__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25em;
+      margin: 3em 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+
+      .nav__link {
+        border-top: 2px solid rgba(200, 200, 200, 0.2);
+        padding-top: 1em;
+        font-weight: 400;
+        font-size: 1.25rem;
+      }
+
+      .nav__item--primary {
+        padding: 0.25em 3em;
+        border-color: white;
+        background-color: transparent;
+
+        &:hover {
+          border-color: var(--accent-secondary);
+          background-color: var(--accent-secondary);
+          color: var(--clr-text-primary);
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+
+    svg {
+      cursor: pointer;
+      * {
+        fill: white;
+      }
+
+      &:hover * {
+        fill: var(--accent-secondary);
+      }
+    }
+  }
+}
+
+.js-set-top0 {
+  top: 0 !important;
+}
+
+.js-d-none {
+  display: none !important;
+}

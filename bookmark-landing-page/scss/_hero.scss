@@ -1,0 +1,83 @@
+@use "./config";
+
+@mixin cta-btn-primary {
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-primary);
+  color: white;
+}
+
+.hero {
+  .container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    gap: 3em;
+    margin: 0 auto;
+    min-height: 658px;
+    text-align: center;
+
+    @media (min-width: config.$tablet-start) {
+      grid-template-columns: 2fr 3fr;
+      align-items: center;
+      text-align: left;
+    }
+  }
+
+  img {
+    // max-width: 500px;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    @media (min-width: config.$tablet-start) {
+      order: -1;
+      justify-content: start;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 0.95rem;
+    color: var(--clr-text-secondary);
+  }
+
+  &-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    &__btn {
+      &--primary {
+        @include cta-btn-primary();
+      }
+
+      &--secondary {
+        @include cta-btn-primary();
+        background-color: rgb(250, 250, 250);
+        color: var(--clr-text-secondary);
+      }
+    }
+  }
+}
+
+.box {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: -1;
+  border-top-left-radius: 5em;
+  border-bottom-left-radius: 5em;
+  width: min(80%, 700px);
+  aspect-ratio: 1.75;
+  aspect-ratio: 2;
+  background-color: var(--accent-primary);
+}

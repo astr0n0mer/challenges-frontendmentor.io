@@ -1,0 +1,22 @@
+@use "./config";
+@use "./nav";
+@use "./hero";
+
+body {
+  padding: 2.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: min(1200px, 90%);
+}
