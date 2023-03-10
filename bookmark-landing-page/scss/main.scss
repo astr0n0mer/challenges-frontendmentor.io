@@ -13,7 +13,8 @@ ul {
 
 .container {
   display: grid;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: 10% 1fr 10%;
+  overflow-x: hidden;
   margin: 2em auto;
 
   & > * {
