@@ -43,7 +43,6 @@
   }
 
   .hamburger {
-    cursor: pointer;
     padding: 0.5em;
 
     @media (min-width: config.$tablet-start) {
@@ -80,8 +79,17 @@
       justify-content: space-between;
       align-items: center;
 
+      .logo,
       .cross {
         padding: 0.5em;
+
+        & > svg path {
+          fill: white;
+        }
+
+        &:hover > svg path {
+          fill: var(--accent-secondary);
+        }
       }
     }
 
@@ -126,17 +134,17 @@
       justify-content: center;
       align-items: center;
       gap: 2em;
-    }
 
-    .cross,
-    svg {
-      cursor: pointer;
-      * {
-        fill: white;
-      }
+      &__link {
+        padding: 0.5em;
 
-      &:hover * {
-        fill: var(--accent-secondary);
+        & > svg path {
+          fill: white;
+        }
+
+        &:hover > svg path {
+          fill: var(--accent-secondary);
+        }
       }
     }
   }
