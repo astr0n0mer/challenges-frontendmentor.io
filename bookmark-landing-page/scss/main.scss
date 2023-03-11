@@ -1,6 +1,11 @@
 @use "./config";
 @use "./nav";
 @use "./hero";
+@use "./features";
+
+body {
+  color: var(--clr-text-primary);
+}
 
 button {
   border-width: 0;

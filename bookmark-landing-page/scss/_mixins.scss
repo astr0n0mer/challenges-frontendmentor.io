@@ -1,0 +1,26 @@
+@mixin title($text-align: center) {
+  font-weight: 500;
+  text-align: $text-align;
+  color: var(--clr-text-primary);
+}
+
+@mixin subtitle($text-align: center) {
+  margin: 1em auto;
+  max-width: 425px;
+  font-size: 0.95rem;
+  text-align: $text-align;
+  color: var(--clr-text-secondary);
+}
+
+@mixin cta-btn-primary {
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-primary);
+  color: whitesmoke;
+
+  &:hover {
+    translate: 0 -5px;
+    transition: translate 0.3s ease-in-out;
+  }
+}

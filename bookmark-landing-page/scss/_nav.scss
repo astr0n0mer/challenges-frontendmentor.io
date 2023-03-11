@@ -55,11 +55,16 @@
     inset: -100% 0 auto;
     z-index: 2;
     opacity: 0.95;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     min-height: 100%;
     transition: all 500ms ease-in-out;
 
     background-color: var(--clr-text-primary);
-    color: white;
+    color: whitesmoke;
 
     @media (min-width: config.$tablet-start) {
       display: none;
@@ -70,7 +75,6 @@
     }
 
     &__container {
-      margin: 5em auto;
       width: min(320px, 90%);
     }
 
@@ -84,7 +88,7 @@
         padding: 0.5em;
 
         & > svg path {
-          fill: white;
+          fill: whitesmoke;
         }
 
         &:hover > svg path {
@@ -120,8 +124,6 @@
       border: 2px solid whitesmoke;
       border-radius: 0.3em;
       padding: 0.25em 3em;
-      background-color: transparent;
-      color: whitesmoke;
 
       &:hover {
         border-color: var(--accent-secondary);

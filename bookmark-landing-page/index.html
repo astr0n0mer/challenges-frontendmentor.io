@@ -136,7 +136,7 @@
         </nav>
       </nav>
 
-      <main class="hero">
+      <section class="hero">
         <img src="./images/illustration-hero.svg" alt="Bookmarks dashboard" />
         <div class="hero-info">
           <h1 class="hero__title">A Simple Bookmark Manager</h1>
@@ -154,18 +154,101 @@
           </div>
         </div>
         <div class="box"></div>
-      </main>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">Features</h2>
+        <p class="features__subtitle">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+
+        <div class="feature-wrapper">
+          <input
+            type="radio"
+            name="feature--selected"
+            id="simple-bookmarking"
+            class="d-none"
+            checked
+          />
+          <input
+            type="radio"
+            name="feature--selected"
+            id="speedy-searching"
+            class="d-none"
+          />
+          <input
+            type="radio"
+            name="feature--selected"
+            id="easy-sharing"
+            class="d-none"
+          />
+
+          <div class="feature-list">
+            <label for="simple-bookmarking" class="feature__label"
+              >Simple Bookmarking</label
+            ><label for="speedy-searching" class="feature__label"
+              >Speedy Searching</label
+            >
+            <label for="easy-sharing" class="feature__label"
+              >Easy Sharing</label
+            >
+          </div>
+
+          <div class="feature-tab-wrapper">
+            <figure class="feature">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="Bookmark in one click"
+                class="feature__img"
+              />
+              <figcaption class="feature-info">
+                <h3 class="feature__title">Bookmark in one click</h3>
+                <p class="feature__subtitle">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <button class="feature__cta">More Info</button>
+              </figcaption>
+            </figure>
+            <figure class="feature">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt="Intelligent search"
+                class="feature__img"
+              />
+              <figcaption class="feature-info">
+                <h3 class="feature__title">Intelligent search</h3>
+                <p class="feature__subtitle">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button class="feature__cta">More Info</button>
+              </figcaption>
+            </figure>
+            <figure class="feature">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt="Share your bookmarks"
+                class="feature__img"
+              />
+              <figcaption class="feature-info">
+                <h3 class="feature__title">Share your bookmarks</h3>
+                <p class="feature__subtitle">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <button class="feature__cta">More Info</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
       <p>
-        Features Our aim is to make it quick and easy for you to access your
-        favourite websites. Your bookmarks sync between your devices so you can
-        access them on the go. Simple Bookmarking Speedy Searching Easy Sharing
-        Bookmark in one click Organize your bookmarks however you like. Our
-        simple drag-and-drop interface gives you complete control over how you
-        manage your favourite sites. More Info Intelligent search Our powerful
-        search feature will help you find saved sites in no time at all. No need
-        to trawl through all of your bookmarks. More Info Share your bookmarks
-        Easily share your bookmarks and collections with others. Create a
-        shareable link that you can send at the click of a button. More Info
         Download the extension We’ve got more browsers in the pipeline. Please
         do let us know if you’ve got a favourite you’d like us to prioritize.
         Add to Chrome Minimum version 62 Add & Install Extension Add to Firefox
