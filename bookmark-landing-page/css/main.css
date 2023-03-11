@@ -542,6 +542,132 @@ body {
   transition: translate 0.3s ease-in-out;
 }
 
+.faq__title {
+  font-weight: 500;
+  text-align: center;
+  color: var(--clr-text-primary);
+}
+.faq__subtitle {
+  margin: 1em auto;
+  max-width: 425px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--clr-text-secondary);
+}
+.faq__cta {
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-primary);
+  color: whitesmoke;
+  display: block;
+  margin: 0 auto;
+}
+.faq__cta:hover {
+  translate: 0 -5px;
+  -webkit-transition: translate 0.3s ease-in-out;
+  transition: translate 0.3s ease-in-out;
+}
+
+.questions {
+  margin: 2em auto;
+  max-width: 425px;
+}
+.questions .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  border-bottom: 1px solid var(--clr-text-secondary);
+  padding: 1em 0;
+}
+.questions .question__title {
+  font-weight: 400;
+}
+.questions .question:hover .question__title {
+  color: var(--accent-secondary);
+}
+.questions .question svg {
+  -webkit-transition: rotate 0.3s ease;
+  transition: rotate 0.3s ease;
+}
+.questions .answer {
+  margin: 1em auto;
+  max-width: 425px;
+  font-size: 0.95rem;
+  text-align: left;
+  color: var(--clr-text-secondary);
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  opacity: 0;
+  margin: 0;
+  max-height: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.questions input[type=checkbox]:nth-of-type(1):checked ~ .question:nth-of-type(1) svg {
+  rotate: 180deg;
+}
+.questions input[type=checkbox]:nth-of-type(1):checked ~ .question:nth-of-type(1) svg path {
+  stroke: var(--accent-secondary);
+}
+.questions input[type=checkbox]:nth-of-type(1):checked ~ .question:nth-of-type(1) .answer {
+  opacity: 1;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 1em auto;
+}
+.questions input[type=checkbox]:nth-of-type(2):checked ~ .question:nth-of-type(2) svg {
+  rotate: 180deg;
+}
+.questions input[type=checkbox]:nth-of-type(2):checked ~ .question:nth-of-type(2) svg path {
+  stroke: var(--accent-secondary);
+}
+.questions input[type=checkbox]:nth-of-type(2):checked ~ .question:nth-of-type(2) .answer {
+  opacity: 1;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 1em auto;
+}
+.questions input[type=checkbox]:nth-of-type(3):checked ~ .question:nth-of-type(3) svg {
+  rotate: 180deg;
+}
+.questions input[type=checkbox]:nth-of-type(3):checked ~ .question:nth-of-type(3) svg path {
+  stroke: var(--accent-secondary);
+}
+.questions input[type=checkbox]:nth-of-type(3):checked ~ .question:nth-of-type(3) .answer {
+  opacity: 1;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 1em auto;
+}
+.questions input[type=checkbox]:nth-of-type(4):checked ~ .question:nth-of-type(4) svg {
+  rotate: 180deg;
+}
+.questions input[type=checkbox]:nth-of-type(4):checked ~ .question:nth-of-type(4) svg path {
+  stroke: var(--accent-secondary);
+}
+.questions input[type=checkbox]:nth-of-type(4):checked ~ .question:nth-of-type(4) .answer {
+  opacity: 1;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 1em auto;
+}
+
 body {
   color: var(--clr-text-primary);
 }

@@ -3,6 +3,7 @@
 @use "./hero";
 @use "./features";
 @use "./download";
+@use "./faq";
 
 body {
   color: var(--clr-text-primary);
