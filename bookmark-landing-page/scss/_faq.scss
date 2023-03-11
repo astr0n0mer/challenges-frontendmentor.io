@@ -22,14 +22,17 @@
   max-width: 425px;
 
   .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: block;
     overflow: hidden;
-
     border-bottom: 1px solid var(--clr-text-secondary);
     padding: 1em 0;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+    }
 
     &__title {
       font-weight: 400;
@@ -48,7 +51,6 @@
 
   .answer {
     @include mixins.subtitle($text-align: left);
-    flex-grow: 10;
     opacity: 0;
     margin: 0;
     max-height: 0;
@@ -67,8 +69,8 @@
 
         .answer {
           opacity: 1;
-          max-height: fit-content;
           margin: 1em auto;
+          max-height: fit-content;
         }
       }
     }

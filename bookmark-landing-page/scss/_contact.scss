@@ -1,0 +1,50 @@
+.contact {
+  grid-column: 1 / -1 !important;
+  margin-top: 2em;
+  padding: 3em 0;
+  text-align: center;
+  background-color: var(--accent-primary);
+  color: whitesmoke;
+
+  & > * {
+    margin: 0 auto;
+    max-width: min(80%, 425px);
+  }
+
+  &__subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 1em auto;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    input {
+      flex-grow: 3;
+      border-radius: 0.25em;
+      padding: 0.75em 1.25em;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      flex-grow: 1;
+      border: 2px solid var(--accent-secondary);
+      background-color: var(--accent-secondary);
+      color: whitesmoke;
+
+      &:hover {
+        background-color: whitesmoke;
+        color: var(--accent-secondary);
+      }
+    }
+  }
+}
