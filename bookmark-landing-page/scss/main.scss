@@ -6,17 +6,22 @@
 @use "./contact";
 @use "./footer";
 
-body {
-  color: var(--clr-text-primary);
+html {
+  scroll-behavior: smooth;
 }
 
-button {
-  border-width: 0;
+body {
+  color: var(--clr-text-primary);
 }
 
 ul {
   padding: 0;
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {

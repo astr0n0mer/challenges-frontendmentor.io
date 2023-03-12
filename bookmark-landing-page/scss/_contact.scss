@@ -1,7 +1,6 @@
 .contact {
   grid-column: 1 / -1 !important;
-  margin-top: 2em;
-  padding: 3em 0;
+  padding: 4em 0;
   text-align: center;
   background-color: var(--accent-primary);
   color: whitesmoke;
@@ -40,6 +39,7 @@
       border: 2px solid var(--accent-secondary);
       background-color: var(--accent-secondary);
       color: whitesmoke;
+      cursor: pointer;
 
       &:hover {
         background-color: whitesmoke;

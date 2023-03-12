@@ -2,7 +2,7 @@
 @use "./mixins";
 
 .features {
-  margin: 4em auto;
+  padding: 4em 0;
 
   &__title {
     @include mixins.title();
@@ -31,8 +31,14 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
+
     padding: 0.5em 0;
     color: var(--clr-text-secondary);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent-secondary);
+    }
 
     &::after {
       content: "";
@@ -47,7 +53,13 @@
 }
 
 .feature-tab-wrapper {
-  position: relative; // for .feature
+  position: relative; // for .feature and .box
+
+  .box {
+    // rest of .box is defined in _hero.scss
+    inset: 15% auto auto -13%;
+    border-radius: 0 30% 30% 0;
+  }
 }
 
 .feature {
@@ -79,6 +91,7 @@
     @include mixins.cta-btn-primary();
     display: block;
     margin: 0 auto;
+    width: fit-content;
   }
 
   @media (min-width: config.$tablet-start) {
