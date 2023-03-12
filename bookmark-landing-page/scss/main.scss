@@ -1,0 +1,41 @@
+@use "./nav";
+@use "./hero";
+@use "./features";
+@use "./download";
+@use "./faq";
+@use "./contact";
+@use "./footer";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--clr-text-primary);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  overflow-x: hidden;
+  margin: 2em auto;
+
+  & > * {
+    grid-column: 2/-2;
+    width: 100%;
+  }
+}
+
+.d-none {
+  display: none !important;
+}

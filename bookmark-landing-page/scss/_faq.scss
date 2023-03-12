@@ -1,0 +1,82 @@
+@use "./config";
+@use "./mixins";
+
+.faq {
+  padding: 4em 0;
+
+  &__title {
+    @include mixins.title();
+  }
+
+  &__subtitle {
+    @include mixins.subtitle();
+  }
+
+  &__cta {
+    @include mixins.cta-btn-primary();
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+.questions {
+  margin: 2em auto;
+  max-width: 425px;
+
+  .question {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid var(--clr-text-secondary);
+    padding: 1em 0;
+    cursor: pointer;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+    }
+
+    &__title {
+      font-weight: 400;
+    }
+
+    &:hover {
+      .question__title {
+        color: var(--accent-secondary);
+      }
+    }
+
+    svg {
+      transition: rotate 0.3s ease;
+    }
+  }
+
+  .answer {
+    @include mixins.subtitle($text-align: left);
+    opacity: 0;
+    margin: 0;
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @for $i from 1 through 4 {
+    input[type="checkbox"]:nth-of-type(#{$i}):checked {
+      & ~ .question:nth-of-type(#{$i}) {
+        svg {
+          rotate: 180deg;
+          path {
+            stroke: var(--accent-secondary);
+          }
+        }
+
+        .answer {
+          opacity: 1;
+          margin: 1em auto;
+          max-height: fit-content;
+        }
+      }
+    }
+  }
+}

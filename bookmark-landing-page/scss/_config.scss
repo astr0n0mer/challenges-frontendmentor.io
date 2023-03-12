@@ -1,0 +1,13 @@
+:root {
+  --accent-primary: hsl(231, 69%, 60%);
+  --accent-secondary: hsl(0, 94%, 66%);
+  --clr-text-primary: hsl(229, 31%, 21%);
+  --clr-text-secondary: hsl(229, 8%, 60%);
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Rubik", sans-serif;
+}
+
+$tablet-start: 900px;

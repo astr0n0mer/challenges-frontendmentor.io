@@ -1,0 +1,140 @@
+@use "./config";
+@use "./mixins";
+
+.features {
+  padding: 4em 0;
+
+  &__title {
+    @include mixins.title();
+  }
+
+  &__subtitle {
+    @include mixins.subtitle();
+  }
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+
+  @media (min-width: config.$tablet-start) {
+    flex-direction: row;
+    justify-content: center;
+    max-width: calc(config.$tablet-start - 20%);
+  }
+
+  .feature__label {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+
+    padding: 0.5em 0;
+    color: var(--clr-text-secondary);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--accent-secondary);
+    }
+
+    &::after {
+      content: "";
+      width: 90%;
+      height: 4px;
+
+      @media (min-width: config.$tablet-start) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.feature-tab-wrapper {
+  position: relative; // for .feature and .box
+
+  .box {
+    // rest of .box is defined in _hero.scss
+    inset: 15% auto auto -13%;
+    border-radius: 0 30% 30% 0;
+  }
+}
+
+.feature {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &-info {
+    margin: 3em auto;
+  }
+
+  &__title {
+    --text-align: center;
+    @include mixins.title($text-align: var(--text-align));
+  }
+
+  &__subtitle {
+    --text-align: center;
+    @include mixins.subtitle($text-align: var(--text-align));
+  }
+
+  &__cta {
+    @include mixins.cta-btn-primary();
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  @media (min-width: config.$tablet-start) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+
+    &__img {
+      max-width: 50%;
+    }
+
+    &__title,
+    &__subtitle {
+      --text-align: left;
+    }
+
+    &__cta {
+      margin: 0;
+    }
+  }
+}
+
+.feature-wrapper {
+  @for $i from 1 through 3 {
+    input[name="feature--selected"]:nth-of-type(#{$i}):checked {
+      & ~ .feature-list {
+        .feature__label:nth-of-type(#{$i}) {
+          color: var(--clr-text-primary);
+
+          &::after {
+            background-color: var(--accent-secondary);
+          }
+        }
+      }
+
+      & ~ .feature-tab-wrapper {
+        .feature:nth-of-type(#{$i}) {
+          position: static;
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

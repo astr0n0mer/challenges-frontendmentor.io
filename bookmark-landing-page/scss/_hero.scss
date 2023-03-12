@@ -1,0 +1,86 @@
+@use "./config";
+@use "./mixins";
+
+.hero {
+  position: relative; // for .box
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 4em 0;
+  text-align: center;
+
+  @media (min-width: config.$tablet-start) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+
+    & > img {
+      max-width: 50%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    margin: 2em auto;
+    max-width: 425px;
+    font-size: 0.95rem;
+    color: var(--clr-text-secondary);
+  }
+
+  &-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+
+    @media (min-width: config.$tablet-start) {
+      justify-content: start;
+    }
+
+    &__btn {
+      &--primary,
+      &--secondary {
+        @include mixins.cta-btn-primary();
+        border: 2px solid transparent;
+      }
+
+      &--primary {
+        &:hover {
+          border-color: var(--accent-primary);
+          color: var(--accent-primary);
+        }
+      }
+
+      &--secondary {
+        background-color: whitesmoke;
+        color: var(--clr-text-secondary);
+
+        &:hover {
+          border-color: var(--clr-text-secondary);
+          color: var(--clr-text-secondary);
+        }
+      }
+    }
+  }
+}
+
+.box {
+  position: absolute;
+  inset: 20% -13% auto auto;
+  z-index: -1;
+
+  border-radius: 30% 0 0 30%;
+  width: 70%;
+  aspect-ratio: 1.25;
+  background-color: var(--accent-primary);
+
+  @media (min-width: config.$tablet-start) {
+    width: 45%;
+  }
+}
