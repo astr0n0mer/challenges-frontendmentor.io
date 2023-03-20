@@ -1,0 +1,116 @@
+@use "./config";
+@use "./mixins";
+
+.footer {
+  grid-column: 1/-1;
+  width: 100%;
+  background-color: var(--very-dark-violet);
+}
+
+.pricing {
+  padding: 5em 0;
+
+  background: url("../images/bg-boost-mobile.svg") no-repeat var(--dark-violet);
+  background-position: right center;
+  background-size: contain;
+
+  color: var(--white);
+  text-align: center;
+
+  & > * {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  &__title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  &__cta {
+    @include mixins.btn-primary();
+    margin-top: 0.5em;
+    padding: 1em 2.5em;
+  }
+
+  @media (min-width: config.$tablet-start) {
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.footer-links {
+  display: grid;
+  align-items: start;
+  gap: 2em;
+
+  margin: 0 auto;
+  width: min(90%, 1100px);
+  padding-top: 3em;
+  color: var(--white);
+  text-align: center;
+
+  & > * {
+    margin: 0 auto;
+    width: min(90%, 1100px);
+  }
+
+  &__logo {
+    margin: 1em auto;
+    width: auto;
+
+    & path {
+      fill: var(--white);
+    }
+  }
+
+  @media (min-width: config.$tablet-start) {
+    grid-template-columns: 2fr repeat(3, 1fr) 2fr;
+    justify-content: center;
+    text-align: left;
+
+    &__logo {
+      margin-left: 0;
+    }
+  }
+}
+
+.links {
+  &__title {
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+
+  &__item {
+    margin: 1em auto;
+    color: var(--grayish-violet);
+    font-size: 0.9rem;
+  }
+
+  &__link {
+    &:is(:hover, :focus-visible) {
+      color: var(--cyan);
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 2em;
+
+  &__link {
+    &:is(:hover, :focus-visible) path {
+      fill: var(--cyan);
+    }
+  }
+}
+
+.attribution {
+  margin: 0 auto;
+  width: min(90%, 1100px);
+  padding: 1em 0;
+  color: var(--grayish-violet);
+}

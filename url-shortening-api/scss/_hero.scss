@@ -1,0 +1,51 @@
+@use "./config";
+@use "./mixins";
+
+.hero {
+  padding: 3em 0 5em;
+  text-align: center;
+
+  &__img {
+    position: relative;
+    right: -6%;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  &__subtitle {
+    margin-bottom: 2.5em;
+    font-weight: 500;
+    color: var(--grayish-violet);
+  }
+
+  &__cta {
+    padding: 1em 2.5em;
+  }
+
+  @media (min-width: config.$tablet-start) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3em;
+    text-align: left;
+
+    &__img {
+      max-width: 45%;
+    }
+
+    &__title {
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.btn--primary {
+  @include mixins.btn-primary();
+}
