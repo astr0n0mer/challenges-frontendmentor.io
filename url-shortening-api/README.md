@@ -28,21 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-<table>
-  <thead>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </thead>
-  <tbody>
-    <td><img src="./screenshot-desktop.png" /></td>
-    <td><img src="./screenshot-mobile.png" /></td>
-  </tbody>
-</table>
-<style>
-  td {
-    vertical-align: top;
-  }
-</style>
+| Mobile                       | Desktop                       |
+| ---------------------------- | ----------------------------- |
+| ![](./screenshot-mobile.png) | ![](./screenshot-desktop.png) |
 
 ### Links
 
