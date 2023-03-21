@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__link">
+      <a href="#" class="header__link" aria-label="Shortly">
         <svg
           class="header__logo"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,9 +57,9 @@
       </nav>
 
       <button class="nav__hamburger hamburger hamburger--open">
-        <div class="bar bar--1"></div>
-        <div class="bar bar--2"></div>
-        <div class="bar bar--3"></div>
+        <span class="bar bar--1"></span>
+        <span class="bar bar--2"></span>
+        <span class="bar bar--3"></span>
       </button>
 
       <nav class="header__nav nav nav--desktop">
@@ -83,20 +83,20 @@
       </nav>
     </header>
 
-    <figure class="hero">
+    <section class="hero">
       <img class="hero__img" src="./images/illustration-working.svg" alt="" />
-      <figcaption class="hero__text-wrapper">
+      <div class="hero__text-wrapper">
         <h1 class="hero__title">More than just shorter links</h1>
         <p class="hero__subtitle">
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </p>
         <a href="#shortener" class="hero__cta btn--primary">Get Started</a>
-      </figcaption>
-    </figure>
+      </div>
+    </section>
 
     <main class="shortener" id="shortener">
-      <form action="" class="shortener__form form">
+      <form action="./" class="shortener__form form">
         <input
           type="url"
           class="form__full-url"
@@ -180,13 +180,13 @@
     </main>
 
     <footer class="footer" id="resources">
-      <aside class="pricing" id="pricing">
+      <section class="pricing" id="pricing">
         <h2 class="pricing__title">Boost your links today</h2>
         <input type="button" value="Get Started" class="pricing__cta" />
-      </aside>
+      </section>
 
-      <div class="footer-links">
-        <a href="#" class="footer-links__link">
+      <section class="footer-links">
+        <a href="#" class="footer-links__link" aria-label="Shortly">
           <svg
             class="footer-links__logo"
             xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@
           </svg>
         </a>
         <div class="links">
-          <h4 class="links__title">Features</h4>
+          <h3 class="links__title">Features</h3>
           <ul class="links__group">
             <li class="links__item">
               <a href="#shortener" class="links__link">Link Shortening</a>
@@ -214,7 +214,7 @@
           </ul>
         </div>
         <div class="links">
-          <h4 class="links__title">Resources</h4>
+          <h3 class="links__title">Resources</h3>
           <ul class="links__group">
             <li class="links__item">
               <a href="#shortener" class="links__link">Blog</a>
@@ -228,7 +228,7 @@
           </ul>
         </div>
         <div class="links">
-          <h4 class="links__title">Company</h4>
+          <h3 class="links__title">Company</h3>
           <ul class="links__group">
             <li class="links__item">
               <a href="#shortener" class="links__link">About</a>
@@ -246,7 +246,7 @@
         </div>
         <ul class="social">
           <li class="social__item">
-            <a href="#0" class="social__link">
+            <a href="#0" class="social__link" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#FFF"
@@ -256,7 +256,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#0" class="social__link">
+            <a href="#0" class="social__link" aria-label="Twitter">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
                 <path
                   fill="#FFF"
@@ -266,7 +266,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#0" class="social__link">
+            <a href="#0" class="social__link" aria-label="Pinterest">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#FFF"
@@ -276,7 +276,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#0" class="social__link">
+            <a href="#0" class="social__link" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#FFF"
@@ -286,7 +286,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
