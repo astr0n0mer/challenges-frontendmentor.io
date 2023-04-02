@@ -1,0 +1,25 @@
+@use "./config";
+@use "./header";
+@use "./projects";
+
+body {
+  margin: 0;
+  padding: 3em 0;
+
+  background-image: url("../images/background-body.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top left;
+
+  font-family: config.$primary-font;
+
+  & > * {
+    margin: 0 auto;
+    width: min(1024px, 90%);
+  }
+}
+
+h2,
+p {
+  margin: 0;
+}

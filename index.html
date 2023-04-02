@@ -10,177 +10,34 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Frontend Mentor | Challenges</title>
   </head>
+
   <body>
-    <h1>Frontend Mentor | Challenges</h1>
-    <main class="project-gallery">
-      <a href="./url-shortening-api/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./url-shortening-api/screenshot-desktop.png"
-              alt="URL shortening API landing page"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            URL shortening API landing page
-          </figcaption>
-        </figure></a
+    <header class="header">
+      <p class="header__eyebrow">Challenges from</p>
+      <a
+        href="https://www.frontendmentor.io/"
+        target="_blank"
+        class="header__link"
       >
-      <a href="./bookmark-landing-page/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./bookmark-landing-page/screenshot-desktop.png"
-              alt="Bookmark landing page"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Bookmark landing page
-          </figcaption>
-        </figure></a
-      >
-      <a href="./interactive-card-details-form/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./interactive-card-details-form/screenshot-desktop.png"
-              alt="Interactive card details form"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Interactive card details form
-          </figcaption>
-        </figure></a
-      >
-      <a href="./fylo-data-storage-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./fylo-data-storage-component/screenshot-desktop.png"
-              alt="Fylo data storage component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Fylo data storage component
-          </figcaption>
-        </figure></a
-      >
-      <a href="./testimonials-grid-section/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./testimonials-grid-section/screenshot-desktop.png"
-              alt="Testimonials grid section"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Testimonials grid section
-          </figcaption>
-        </figure></a
-      >
-      <a href="./advice-generator-app/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./advice-generator-app/screenshot-desktop.png"
-              alt="Advice generator app"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Advice generator app
-          </figcaption>
-        </figure></a
-      >
-      <a href="./interactive-rating-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./interactive-rating-component/screenshot-desktop.png"
-              alt="Interactive rating component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Interactive rating component
-          </figcaption>
-        </figure></a
-      >
-      <a href="./3-column-preview-card-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./3-column-preview-card-component/screenshot-desktop.png"
-              alt="3-column preview card component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            3-column preview card component
-          </figcaption>
-        </figure></a
-      >
-      <a href="./product-preview-card-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./product-preview-card-component/screenshot-desktop.png"
-              alt="Product preview card component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Product preview card component
-          </figcaption>
-        </figure></a
-      >
-      <a href="./order-summary-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./order-summary-component/screenshot.png"
-              alt="Order summary component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            Order summary component
-          </figcaption>
-        </figure></a
-      >
-      <a href="./qr-code-component/index.html"
-        ><figure class="project__card">
-          <div class="project__card__img-wrapper">
-            <img
-              class="project__card__img"
-              src="./qr-code-component/screenshot.png"
-              alt="QR code component"
-              loading="lazy"
-            />
-          </div>
-          <figcaption class="project__card__caption">
-            QR code component
-          </figcaption>
-        </figure></a
-      >
-    </main>
+        <img
+          src="./images/frontend-mentor.svg"
+          alt="Frontend Mentor logo"
+          class="header__title"
+        />
+      </a>
+    </header>
+
+    <main class="projects"></main>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
