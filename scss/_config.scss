@@ -1,0 +1,14 @@
+$primary-font: "Barlow", sans-serif;
+$tablet-start: 425px;
+$laptop-start: 768px;
+
+:root,
+:root::before,
+:root::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  outline-color: transparent;
+}
