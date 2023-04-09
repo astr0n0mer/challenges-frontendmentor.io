@@ -5,7 +5,7 @@ const projects = [
       "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
     desktopScreenshot:
       "./four-card-feature-section/public/screenshot-desktop.png",
-    techstack: ["Vite", "React JS", "SASS", "BEM"],
+    techstack: ["React JS", "SASS", "BEM", "Vite"],
     demoLink: "./four-card-feature-section/dist/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/four-card-feature-section/",
@@ -15,7 +15,7 @@ const projects = [
     subtitle:
       "Integrate with the shrtcode URL shortening API and play with browser storage in this landing page challenge.",
     desktopScreenshot: "./url-shortening-api/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "JavaScript", "BEM", "SASS", "Cloud API"],
+    techstack: ["HTML", "SASS", "BEM", "JavaScript", "Cloud API"],
     demoLink: "./url-shortening-api/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/url-shortening-api/",
@@ -25,7 +25,7 @@ const projects = [
     subtitle:
       "This challenge will really test your layout skills. There are also areas that will require some JavaScript, such as the tabbed features section and the FAQ accordion.",
     desktopScreenshot: "./bookmark-landing-page/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "JavaScript", "BEM", "SASS"],
+    techstack: ["HTML", "SASS", "BEM", "JavaScript"],
     demoLink: "./bookmark-landing-page/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/bookmark-landing-page/",
@@ -35,7 +35,7 @@ const projects = [
     subtitle:
       "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
     desktopScreenshot: "./interactive-card-details-form/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "JavaScript", "BEM", "SASS"],
+    techstack: ["HTML", "SASS", "BEM", "JavaScript"],
     demoLink: "./interactive-card-details-form/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/interactive-card-details-form/",
@@ -55,7 +55,7 @@ const projects = [
     subtitle:
       "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
     desktopScreenshot: "./testimonials-grid-section/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "BEM", "SASS"],
+    techstack: ["HTML", "SASS", "BEM"],
     demoLink: "./testimonials-grid-section/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/testimonials-grid-section/",
@@ -65,7 +65,7 @@ const projects = [
     subtitle:
       "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
     desktopScreenshot: "./advice-generator-app/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "JavaScript", "BEM", "Cloud API"],
+    techstack: ["HTML", "CSS", "BEM", "JavaScript", "Cloud API"],
     demoLink: "./advice-generator-app/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/advice-generator-app/",
@@ -75,7 +75,7 @@ const projects = [
     subtitle:
       "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
     desktopScreenshot: "./interactive-rating-component/screenshot-desktop.png",
-    techstack: ["HTML", "CSS", "JavaScript", "BEM"],
+    techstack: ["HTML", "CSS", "BEM", "JavaScript"],
     demoLink: "./interactive-rating-component/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/interactive-rating-component/",
