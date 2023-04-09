@@ -1,0 +1,22 @@
+.App {
+  margin: 0 auto;
+  width: min(1100px, 80%);
+}
+
+.header {
+  text-align: center;
+}
+.header__title {
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.header__title--thin {
+  display: block;
+  font-weight: 200;
+}
+.header__subtitle {
+  margin: 0 auto;
+  max-width: 500px;
+  color: var(--clr-font-secondary);
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,21 @@
+.feature-grid {
+  display: grid;
+  justify-content: center;
+  gap: 2.5em;
+  margin: 4em auto;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    align-items: center;
+
+    &__feature:is(:nth-child(4n + 1), :nth-child(4n)) {
+      grid-row: span 2;
+    }
+
+    &__feature:nth-child(4n-1) {
+      grid-column-start: -3;
+    }
+  }
+}

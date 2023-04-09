@@ -1,0 +1,25 @@
+:root,
+:root::before,
+:root::after {
+  --clr-font-primary: hsl(234, 12%, 34%);
+  --clr-font-secondary: hsl(229, 6%, 66%);
+  --clr-background-primary: hsl(0, 0%, 98%);
+
+  box-sizing: border-box;
+  font-size: 93.75%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 5.5em auto;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--clr-background-primary);
+  color: var(--clr-font-primary);
+}
+
+figure {
+  margin: 0;
+}
