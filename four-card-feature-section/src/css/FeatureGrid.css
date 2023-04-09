@@ -1,9 +1,12 @@
 .feature-grid {
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2.5em;
   margin: 4em auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .feature-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);

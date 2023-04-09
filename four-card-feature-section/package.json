@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "host": "vite --host",
-    "build": "vite build",
+    "build": "vite build --base=/four-card-feature-section/dist",
     "preview": "vite preview"
   },
   "dependencies": {
