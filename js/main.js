@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Four card feature section",
+    subtitle:
+      "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+    desktopScreenshot:
+      "./four-card-feature-section/public/screenshot-desktop.png",
+    techstack: ["React JS", "Vite", "SASS", "BEM"],
+    demoLink: "./four-card-feature-section/dist/index.html",
+    codeLink:
+      "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/four-card-feature-section/",
+  },
+  {
     title: "URL shortening API landing page",
     subtitle:
       "Integrate with the shrtcode URL shortening API and play with browser storage in this landing page challenge.",
