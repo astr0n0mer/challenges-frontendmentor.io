@@ -54,7 +54,7 @@ Users should be able to:
 
 - [Tailwind CSS Docs](https://tailwindcss.com/docs/utility-first)
 - [Tailwind CSS cheatsheet by nerdcave.com](https://nerdcave.com/tailwind-cheat-sheet)
-- [Tailwind CSS cheatsheet by Umesh Kadam](https://nerdcave.com/tailwind-cheat-sheet)
+- [Tailwind CSS cheatsheet by Umesh Kadam](https://umeshmk.github.io/Tailwindcss-cheatsheet/)
 
 ## Author
 

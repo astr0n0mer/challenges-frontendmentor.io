@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Huddle landing page with curved sections",
+    subtitle:
+      "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
+    desktopScreenshot:
+      "./huddle-landing-page-with-curved-sections/public/screenshot-desktop.png",
+    techstack: ["Tailwind CSS", "HTML", "Vite"],
+    demoLink: "./huddle-landing-page-with-curved-sections/dist/index.html",
+    codeLink:
+      "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/huddle-landing-page-with-curved-sections/",
+  },
+  {
     title: "Four card feature section",
     subtitle:
       "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
