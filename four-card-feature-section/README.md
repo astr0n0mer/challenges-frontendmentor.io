@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution](./)
-- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/four-card-feature-section/index.html)
+- [Live Site](https://astr0n0mer.github.io/challenges-frontendmentor.io/four-card-feature-section/dist/index.html)
 
 ## My process
 
