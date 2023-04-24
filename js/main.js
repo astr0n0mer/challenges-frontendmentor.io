@@ -5,7 +5,7 @@ const projects = [
       "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
     desktopScreenshot:
       "./huddle-landing-page-with-curved-sections/public/screenshot-desktop.png",
-    techstack: ["Tailwind CSS", "HTML", "Vite"],
+    techstack: ["HTML", "Tailwind CSS", "Vite"],
     demoLink: "./huddle-landing-page-with-curved-sections/dist/index.html",
     codeLink:
       "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/huddle-landing-page-with-curved-sections/",
@@ -190,12 +190,31 @@ function getProjectTechstack(techstack) {
     .join("");
 }
 
+// insert all projects in the DOM
 const projectsGallery = document.querySelector(".projects");
 projectsGallery.insertAdjacentHTML("beforeend", projectsHtml);
 
+// set up IntersectionObserver for toggling .fade-in
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fade-in");
+    } else {
+      entry.target.classList.remove("fade-in");
+    }
+  });
+});
+
 const projectElements = projectsGallery.querySelectorAll(".project");
 projectElements.forEach((project) => {
+  observer.observe(project);
+
+  // set the max-height of <picture> equal to its adjacent <figure>
   const picture = project.querySelector(".project__picture");
   const content = project.querySelector(".project__content");
   picture.style.maxHeight = `${content.offsetHeight}px`;
+
+  // set the image translate length for translating the project screenshot on hover & focus
+  const imgTranslateLength = `min(calc((100% - ${content.offsetHeight}px) * -1), 1px)`;
+  picture.style.setProperty("--img-translate-length", imgTranslateLength);
 });
