@@ -7,7 +7,8 @@
   border-radius: 1em;
   padding: 2em;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 
   @media (min-width: config.$tablet-start) {
     grid-template-columns: repeat(3, 1fr);
@@ -15,10 +16,13 @@
 }
 
 .project {
-  --img-translate-length: -100%;
   position: relative; // for &::before
   display: grid;
   gap: 2em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+  transition-property: opacity, visibility, translate;
 
   margin: 0;
   border-radius: inherit;
@@ -29,6 +33,7 @@
   text-align: center;
 
   &__picture {
+    --img-translate-length: -100%;
     overflow: hidden;
     border-radius: inherit;
     max-height: 260px;
@@ -99,12 +104,16 @@
     }
   }
 
-  &:nth-child(odd) {
+  &:where(:nth-child(odd)) {
+    // :where is used to remove the specificity that is introduced by :nth-child selector
+    translate: -25% 0;
     background-color: #ffdee9;
     background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   }
 
-  &:nth-child(even) {
+  &:where(:nth-child(even)) {
+    // :where is used to remove the specificity that is introduced by :nth-child selector
+    translate: 25% 0;
     background-color: #ffdee9;
     background-image: linear-gradient(0deg, #b5fffc 0%, #ffdee9 100%);
   }
@@ -161,4 +170,10 @@
 .tech {
   width: 2em;
   aspect-ratio: 1;
+}
+
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+  translate: 0;
 }
