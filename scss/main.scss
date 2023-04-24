@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  padding: 3em 0;
+  padding-block: 3em;
 
   background-image: url("../images/background-body.png");
   background-attachment: fixed;
@@ -14,7 +14,7 @@ body {
   font-family: config.$primary-font;
 
   & > * {
-    margin: 0 auto;
+    margin-inline: auto;
     width: min(1024px, 90%);
   }
 }
