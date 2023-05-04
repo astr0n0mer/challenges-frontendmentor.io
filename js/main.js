@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "Age calculator app",
+    subtitle:
+      "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
+    desktopScreenshot: "./age-calculator-app/public/screenshot-desktop.png",
+    techstack: ["React JS", "Styled Components", "Vite"],
+    demoLink: "./age-calculator-app/dist/index.html",
+    codeLink:
+      "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/age-calculator-app/",
+  },
+  {
     title: "Huddle landing page with curved sections",
     subtitle:
       "Practice using pseudo-elements for styling extras and the CSS position property for the sections with curved edges.",
