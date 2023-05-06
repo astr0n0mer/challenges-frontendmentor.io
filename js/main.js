@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "Launch countdown timer",
+    subtitle:
+      "The challenge is to build this countdown timer. There are lots of small CSS tests in the design as well. So it should keep you busy!",
+    desktopScreenshot: "./launch-countdown-timer/public/screenshot-desktop.png",
+    techstack: ["React JS", "Styled Components", "Vite"],
+    demoLink: "./launch-countdown-timer/dist/index.html",
+    codeLink:
+      "https://github.com/astr0n0mer/challenges-frontendmentor.io/tree/main/launch-countdown-timer/",
+  },
+  {
     title: "Age calculator app",
     subtitle:
       "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
