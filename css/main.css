@@ -141,16 +141,24 @@
   scale: 0.95;
 }
 .project:where(:nth-child(odd)) {
-  translate: -15% 0;
   background-color: #ffdee9;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffdee9), to(#b5fffc));
   background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
 }
+@media (prefers-reduced-motion: no-preference) {
+  .project:where(:nth-child(odd)) {
+    translate: -10% 0;
+  }
+}
 .project:where(:nth-child(even)) {
-  translate: 15% 0;
   background-color: #ffdee9;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b5fffc), to(#ffdee9));
   background-image: linear-gradient(0deg, #b5fffc 0%, #ffdee9 100%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project:where(:nth-child(even)) {
+    translate: 10% 0;
+  }
 }
 .project:is(:hover, :focus) .project__img {
   translate: 0 var(--img-translate-length);
