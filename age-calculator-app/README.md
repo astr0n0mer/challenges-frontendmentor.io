@@ -66,6 +66,7 @@ Users should be able to:
 
 ## Author
 
+- Portfolio - [Imran Khan](https://imrank.vercel.app/)
 - GitHub - [astr0n0mer](https://www.github.com/astr0n0mer)
-- Frontend Mentor - [@astr0n0mer](https://www.frontendmentor.io/profile/astr0n0mer)
-- Twitter - [@astronomer404](https://www.twitter.com/astronomer404)
+- Frontend Mentor - [astr0n0mer](https://www.frontendmentor.io/profile/astr0n0mer)
+- Twitter - [imrank404](https://www.twitter.com/imrank404)

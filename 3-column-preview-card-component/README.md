@@ -56,6 +56,7 @@ One article per day from [css-tricks](https://css-tricks.com/) is helping me to 
 
 ## Author
 
+- Portfolio - [Imran Khan](https://imrank.vercel.app/)
 - Github - [astr0n0mer](https://www.github.com/astr0n0mer)
-- Frontend Mentor - [@astr0n0mer](https://www.frontendmentor.io/profile/astr0n0mer)
-- Twitter - [@astronomer404](https://www.twitter.com/astronomer404)
+- Frontend Mentor - [astr0n0mer](https://www.frontendmentor.io/profile/astr0n0mer)
+- Twitter - [imrank404](https://www.twitter.com/imrank404)
